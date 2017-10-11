@@ -1,0 +1,8 @@
+<p>{{ user.username }}，您好！</p>
+<p>欢迎使用 <b>ECNU Lib 选座系统</b>!</p>
+<p>请使用下面的链接验证您的账户 <a href="{{ url_for('auth.confirm', token=token, _external=True) }}">点击验证</a>.</p>
+<p>或者您可以在地址栏输入下面的链接</p>
+<p>{{ url_for('auth.confirm', token=token, _external=True) }}</p>
+<p>祝您使用愉快！</p>
+<p>ECNU Lib Team</p>
+<p><small>请不要回复这封邮件。</small></p>

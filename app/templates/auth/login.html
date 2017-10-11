@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}用户登入{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>登入</h1>
+</div>
+<div class="col-md-4">
+    {{ wtf.quick_form(form) }}
+    <br>
+    <p>尚未认证？<a href="{{ url_for('auth.register') }}">请点击这里进行用户认证</a></p>
+</div>
+{% endblock %}
